@@ -6,7 +6,7 @@
        msg: "Hello World!"
     - hostname: name=osp9.pisa.com
     - command: /usr/bin/echo '192.168.122.13 osp9.pisa.com' >> /etc/hosts
-    - command: /usr/bin/subscription-manager username=tu-user password=tupassword 
+    - command: /usr/bin/subscription-manager --username=tu-user --password=tupassword 
     - command: /usr/bin/subscription-manager attach --pool=8a85f98a5611056201564a9cfe6a6341
     - command: /usr/bin/subscription-manager repos --disable=* --enable=rhel-7-server-rpms --enable=rhel-7-server-extras-rpms --enable=rhel-7-server-openstack-9-rpms --enable=rhel-7-server-openstack-9-director-rpms --enable rhel-7-server-rh-common-rpms
     - name: upgrade all packages
