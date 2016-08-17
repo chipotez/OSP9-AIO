@@ -12,3 +12,5 @@
     - name: upgrade all packages
       yum: name=* state=latest
       yum: name=openstack-packstack state=latest
+    - name: Paquete Adicional.
+      yum: name=wget state=latest
