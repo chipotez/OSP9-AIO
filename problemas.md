@@ -10,3 +10,11 @@ Please check log file /var/tmp/packstack/20161012-211731-SCOxL_/openstack-setup.
 Solución:
 
 [root@localhost packstack]# echo "192.168.122.206 demo1.osp9.pisa.com demo1" >> /etc/hosts
+
+
+Error Teamviewer
+
+Install the yum-utils package (I am not sure if yum will let you install it or complain about the dupes), then use this to clear the duplicate packages in the rpm database:
+dnf install yum-utils
+package-cleanup --cleandupes
+
