@@ -1,0 +1,11 @@
+## A Heat environment file which can be used to set up storage
+## backends. Defaults to Ceph used as a backend for Cinder, Glance and
+## Nova ephemeral storage.
+parameter_defaults:
+
+  #### BACKEND SELECTION ####
+  CinderEnableIscsiBackend: false
+  CinderEnableRbdBackend: true
+  NovaEnableRbdBackend: true
+  GlanceBackend: rbd
+  GnocchiBackend: rbd
