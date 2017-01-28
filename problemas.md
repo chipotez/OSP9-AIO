@@ -81,4 +81,11 @@ comentando la línea del puerto 443
 
 
 
+yum groupinstall "Server with GUI"
+systemctl set-default graphical.target
+systemctl start graphical.target
+
+
+
+
 
