@@ -86,6 +86,8 @@ systemctl set-default graphical.target
 systemctl start graphical.target
 
 
+https://access.redhat.com/solutions/187873
+
 
 
 
